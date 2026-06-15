@@ -96,11 +96,10 @@ export default function LaporanDetailPage({ params }: { params: { minggu: string
         </div>
       </div>
 
-      {/* ── Main Content ── */}
       <div className="px-4 sm:px-5 lg:px-6 py-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-
+ 
             {/* ── Header ── */}
             <div className="lg:col-span-4 mb-4">
               <p className="text-[11px] font-semibold uppercase tracking-widest text-[#0f8f96] mb-1">Statistik Resmi</p>
@@ -110,6 +109,18 @@ export default function LaporanDetailPage({ params }: { params: { minggu: string
               <p className="text-[13px] text-[#4a7a7a]">
                 Diperbaharui {laporanData.updated_at}
               </p>
+              <div className="mt-2 inline-block border border-[#0f8f96] text-[#0f8f96] text-[12px] font-semibold px-3 py-1 rounded">
+                Berlaku di Indonesia
+              </div>
+            </div>
+ 
+            {/* ── Ringkasan ── */}
+            <div className="lg:col-span-4 mb-2">
+              <div className="bg-[#f5f5f5] p-5 rounded-lg border-l-4 border-[#0f8f96]">
+                <p className="text-[13px] text-[#2f3a3a] leading-relaxed">
+                  <span className="font-semibold">Ringkasan Laporan:</span> Ringkasan laporan ini menyajikan data epidemiologi rutin untuk penyakit pernapasan (Influenza, COVID-19, dll.) di Indonesia, mencakup tren penyakit, tingkat perawatan di rumah sakit, positivity rate, pemeriksaan molekuler, dan analisis varian.
+                </p>
+              </div>
             </div>
 
             {/* ── Sidebar ── */}

@@ -211,10 +211,11 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Controls Row */}
-          <div className="mb-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="flex flex-col sm:flex-row items-center gap-3">
-              <label className="text-[12px] font-semibold text-[#4a7a7a]">Filter Tahun:</label>
+          {/* Controls Row — semua dalam satu baris, search auto-expand */}
+          <div className="mb-6 flex flex-col sm:flex-row items-center gap-3">
+            {/* Filter Tahun */}
+            <div className="flex items-center gap-2 flex-shrink-0">
+              <label className="text-[12px] font-semibold text-[#4a7a7a] whitespace-nowrap">Filter Tahun:</label>
               <select
                 value={filterTahun}
                 onChange={(e) => {
@@ -230,8 +231,9 @@ export default function HomePage() {
               </select>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto">
-              <label className="text-[12px] font-semibold text-[#4a7a7a]">Show:</label>
+            {/* Show Entries */}
+            <div className="flex items-center gap-2 flex-shrink-0">
+              <label className="text-[12px] font-semibold text-[#4a7a7a] whitespace-nowrap">Show:</label>
               <select
                 value={itemsPerPage}
                 onChange={(e) => {
@@ -245,12 +247,13 @@ export default function HomePage() {
                 <option value={20}>20</option>
                 <option value={30}>30</option>
               </select>
-              <span className="text-[12px] text-[#4a7a7a]">entries</span>
+              <span className="text-[12px] text-[#4a7a7a] whitespace-nowrap">entries</span>
             </div>
 
-            <div className="flex items-center gap-2 w-full sm:w-auto">
+            {/* Search — flex-1 supaya mengisi sisa lebar */}
+            <div className="flex items-center gap-2 flex-1 w-full sm:w-auto">
               <label className="text-[12px] font-semibold text-[#4a7a7a] whitespace-nowrap">Search:</label>
-              <div className="relative flex-1 sm:flex-none">
+              <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-[#9dbfc0]" />
                 <input
                   type="text"
@@ -265,6 +268,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+
           <div className="bg-white rounded-lg overflow-hidden border border-[#e0e0e0]">
             {/* Table */}
             <div className="overflow-x-auto">
@@ -284,7 +288,9 @@ export default function HomePage() {
                     paginatedData.map((item, index) => (
                       <tr
                         key={item.no}
-                        className="border-b border-[#e0e0e0] hover:bg-[#f0fbfb] transition-colors"
+                        className={`border-b border-[#e0e0e0] hover:bg-[#e8f7f7] transition-colors ${
+                          index % 2 === 0 ? 'bg-white' : 'bg-[#f5fcfc]'
+                        }`}
                       >
                         <td className="px-4 sm:px-6 py-4 text-[13px] font-semibold text-[#3f5a5a]">
                           {(currentPage - 1) * itemsPerPage + index + 1}

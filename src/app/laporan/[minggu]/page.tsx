@@ -101,16 +101,27 @@ export default function LaporanDetailPage({ params }: { params: { minggu: string
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
  
             {/* ── Header ── */}
-            <div className="lg:col-span-4 mb-4">
-              <p className="text-[13px] font-semibold uppercase tracking-widest text-[#0f8f96] mb-1">Statistik Resmi</p>
-              <h1 className="text-[32px] sm:text-[38px] font-bold text-[#1a3535] mb-2">
-                Laporan Pengawasan Kasus Influenza dan COVID-19 : {laporanData.tanggal} (Minggu ke {laporanData.minggu_ke})
-              </h1>
-              <p className="text-[15px] text-[#4a7a7a]">
-                Diperbaharui {laporanData.updated_at}
-              </p>
-              <div className="mt-2 inline-block border border-[#0f8f96] text-[#0f8f96] text-[14px] font-semibold px-3 py-1 rounded">
-                Berlaku di Indonesia
+            <div 
+              className="lg:col-span-4 mb-4 relative overflow-hidden rounded-2xl bg-cover bg-center bg-no-repeat shadow-[0_8px_30px_rgba(15,143,150,0.12)] text-white"
+              style={{ backgroundImage: "url('/bg_tosca.webp')" }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-[#000000]/10 to-transparent pointer-events-none" />
+              <div className="relative z-10 p-6 sm:p-8 lg:p-10 flex flex-col items-start justify-center">
+                <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-[0.15em] text-[#e0faf8] bg-white/10 backdrop-blur-sm px-3 py-1 rounded-full mb-3 border border-white/10">
+                  Statistik Resmi
+                </span>
+                <h1 className="text-[26px] sm:text-[34px] lg:text-[40px] font-extrabold text-white leading-tight mb-3 drop-shadow-sm max-w-5xl">
+                  Laporan Pengawasan Kasus Influenza dan COVID-19 : {laporanData.tanggal} (Minggu ke {laporanData.minggu_ke})
+                </h1>
+                <div className="flex flex-wrap items-center gap-3 sm:gap-4 mt-2">
+                  <p className="text-[14px] sm:text-[15px] text-white/80 font-medium">
+                    Diperbaharui {laporanData.updated_at}
+                  </p>
+                  <span className="h-1.5 w-1.5 rounded-full bg-white/40 hidden sm:inline" />
+                  <div className="inline-block bg-white/20 backdrop-blur-md border border-white/20 text-white text-[13px] font-semibold px-3 py-0.5 rounded-full">
+                    Berlaku di Indonesia
+                  </div>
+                </div>
               </div>
             </div>
  

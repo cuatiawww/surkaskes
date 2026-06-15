@@ -6,7 +6,7 @@ import { Home, User, Phone, LogIn, Search } from 'lucide-react'
 import { useState } from 'react'
 
 const assets = {
-  logo: '/Logo-Kemenkes.png',
+  logo: '/surkaskes.png',
   headerBackground: '/bg_skk.png',
 }
 
@@ -88,23 +88,16 @@ export default function HomePage() {
       <nav className="sticky top-0 z-50 w-full bg-white border-b border-[#d5eceb] shadow-[0_2px_8px_rgba(15,143,150,0.08)]">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-5 lg:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
-            {/* Logo + Organization Name */}
             <div className="flex items-center gap-3 sm:gap-4">
               <div className="flex-shrink-0">
                 <Image
                   src={assets.logo}
-                  alt="Logo Kemenkes"
-                  width={60}
+                  alt="Logo Surkaskes"
+                  width={220}
                   height={60}
-                  className="h-10 w-auto sm:h-12"
+                  className="h-10 w-auto sm:h-12 object-contain"
                   priority
                 />
-              </div>
-              <div className="hidden sm:flex flex-col">
-                <h2 className="text-[14px] sm:text-[15px] font-bold text-[#0f8f96] leading-tight">Kemenkes Ditjen P2</h2>
-                <p className="text-[12px] sm:text-[13px] text-[#4a7a7a] leading-tight mt-0.5">
-                  Direktoral Surveillans & Karantina
-                </p>
               </div>
             </div>
 

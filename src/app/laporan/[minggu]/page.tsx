@@ -6,7 +6,7 @@ import { ChevronRight, Printer, Activity, Thermometer, AlertCircle, BarChart3, H
 import { useState } from 'react'
 
 const assets = {
-  logo: '/Logo-Kemenkes.png',
+  logo: '/surkaskes.png',
 }
 
 export default function LaporanDetailPage({ params }: { params: { minggu: string } }) {
@@ -49,18 +49,12 @@ export default function LaporanDetailPage({ params }: { params: { minggu: string
               <div className="flex-shrink-0">
                 <Image
                   src={assets.logo}
-                  alt="Logo Kemenkes"
-                  width={60}
+                  alt="Logo Surkaskes"
+                  width={220}
                   height={60}
-                  className="h-10 w-auto sm:h-12"
+                  className="h-10 w-auto sm:h-12 object-contain"
                   priority
                 />
-              </div>
-              <div className="hidden sm:flex flex-col">
-                <h2 className="text-[14px] sm:text-[15px] font-bold text-[#0f8f96] leading-tight">Kemenkes Ditjen P2</h2>
-                <p className="text-[12px] sm:text-[13px] text-[#4a7a7a] leading-tight mt-0.5">
-                  Direktoral Surveillans & Karantina
-                </p>
               </div>
             </div>
             <div className="flex items-center gap-2 sm:gap-3">

@@ -370,22 +370,13 @@ export default function HomePage() {
 
       {/* ── Footer ──────────────────────────────────────────────────────────── */}
       <footer className="w-full bg-white border-t border-[#cfeeed] py-6 sm:py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6">
+        <div className="px-4 sm:px-5 lg:px-6">
           <div className="max-w-6xl mx-auto text-center space-y-2">
             <p className="text-[11px] sm:text-[12px] text-[#0f8f96] font-semibold">
               Copyright © 2025 Direktoral Surveillans dan Karantina Kesehatan
             </p>
             <p className="text-[11px] sm:text-[12px] text-[#4a7a7a]">
-              Direktorat Jenderal Pencegahan dan Pengendalian Penyakit
-            </p>
-            <p className="text-[11px] sm:text-[12px] text-[#4a7a7a]">
-              Kementerian Kesehatan Republik Indonesia
-            </p>
-            <p className="text-[11px] sm:text-[12px] text-[#4a7a7a]">
-              Jalan H.R. Rasuna Said Blok X-5 Kavling 4-9 Jakarta Selatan 12950
-            </p>
-            <p className="text-[11px] sm:text-[12px] text-[#4a7a7a]">
-              E-mail: <a href="mailto:dit.surveiltans@kemkes.ac.id" className="text-[#0f8f96] hover:underline">dit.surveiltans@kemkes.ac.id</a>
+              Metodologi dan Sumber Data: Data berasal dari SKDR, NAR TC-19, Satu Sehat, Dashboard Vaksinasi COVID-19, dan Dashboard Surveilans ILI-SARI.
             </p>
           </div>
         </div>

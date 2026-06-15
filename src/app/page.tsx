@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Home, User, Phone, LogIn, Search, ChevronDown } from 'lucide-react'
+import { Home, User, Phone, LogIn, Search } from 'lucide-react'
 import { useState } from 'react'
 
 const assets = {
@@ -86,7 +86,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-[#fbffff] text-slate-800">
       {/* ── Navbar ──────────────────────────────────────────────────────────── */}
       <nav className="sticky top-0 z-50 w-full bg-white border-b border-[#d5eceb] shadow-[0_2px_8px_rgba(15,143,150,0.08)]">
-        <div className="px-4 sm:px-5 lg:px-6 py-3 sm:py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             {/* Logo + Organization Name */}
             <div className="flex items-center gap-3 sm:gap-4">
@@ -137,7 +137,7 @@ export default function HomePage() {
             style={{ backgroundImage: `url('${assets.headerBackground}')` }}
           />
 
-          <div className="relative flex min-h-[200px] sm:min-h-[240px] w-full flex-col items-start justify-center px-4 py-6 sm:px-5 sm:py-8 lg:px-6 lg:py-10">
+          <div className="relative max-w-7xl mx-auto flex min-h-[200px] sm:min-h-[240px] w-full flex-col items-start justify-center px-4 py-6 sm:px-5 sm:py-8 lg:px-6 lg:py-10">
             <p className="text-[12px] sm:text-[13px] font-semibold tracking-[0.08em] uppercase text-[#0f8f96] mb-2 sm:mb-3">
               Statistik Resmi Kementerian Kesehatan
             </p>
@@ -152,16 +152,18 @@ export default function HomePage() {
 
       {/* ── Information Section ──────────────────────────────────────────────── */}
       <section className="w-full bg-[#fbffff] py-8 sm:py-10 lg:py-12">
-        <div className="px-4 sm:px-5 lg:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center bg-white rounded-2xl overflow-hidden shadow-[0_4px_16px_rgba(15,143,150,0.08)]">
             {/* Illustration / Image Side */}
-            <div className="hidden lg:flex items-center justify-center p-8 bg-gradient-to-br from-[#e8faf8] to-[#d0f1ef]">
-              <div className="w-full h-80 bg-[rgba(15,143,150,0.05)] rounded-xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-2">👨‍💻</div>
-                  <p className="text-sm text-[#4a7a7a]">Ilustrasi Information</p>
-                </div>
-              </div>
+            <div className="hidden lg:flex items-center justify-center p-8">
+              <Image
+                src="/influ.png"
+                alt="Ilustrasi informasi influenza dan COVID-19"
+                width={560}
+                height={360}
+                className="h-80 w-auto object-contain"
+                sizes="50vw"
+              />
             </div>
 
             {/* Content Side */}
@@ -198,7 +200,7 @@ export default function HomePage() {
 
       {/* ── Matrix Section ──────────────────────────────────────────────────── */}
       <section className="w-full bg-[#fbffff] py-8 sm:py-10 lg:py-12">
-        <div className="px-4 sm:px-5 lg:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6">
           {/* Header Section */}
           <div className="mb-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1a3535] mb-2">
@@ -368,7 +370,7 @@ export default function HomePage() {
 
       {/* ── Footer ──────────────────────────────────────────────────────────── */}
       <footer className="w-full bg-white border-t border-[#cfeeed] py-6 sm:py-8">
-        <div className="px-4 sm:px-5 lg:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6">
           <div className="max-w-6xl mx-auto text-center space-y-2">
             <p className="text-[11px] sm:text-[12px] text-[#0f8f96] font-semibold">
               Copyright © 2025 Direktoral Surveillans dan Karantina Kesehatan

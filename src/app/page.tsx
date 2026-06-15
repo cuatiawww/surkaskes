@@ -86,7 +86,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-[#fbffff] text-slate-800">
       {/* ── Navbar ──────────────────────────────────────────────────────────── */}
       <nav className="sticky top-0 z-50 w-full bg-white border-b border-[#d5eceb] shadow-[0_2px_8px_rgba(15,143,150,0.08)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6 py-3 sm:py-4">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-5 lg:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             {/* Logo + Organization Name */}
             <div className="flex items-center gap-3 sm:gap-4">
@@ -101,8 +101,8 @@ export default function HomePage() {
                 />
               </div>
               <div className="hidden sm:flex flex-col">
-                <h2 className="text-[12px] sm:text-[13px] font-bold text-[#0f8f96] leading-tight">Kemenkes Ditjen P2</h2>
-                <p className="text-[10px] sm:text-[11px] text-[#4a7a7a] leading-tight mt-0.5">
+                <h2 className="text-[14px] sm:text-[15px] font-bold text-[#0f8f96] leading-tight">Kemenkes Ditjen P2</h2>
+                <p className="text-[12px] sm:text-[13px] text-[#4a7a7a] leading-tight mt-0.5">
                   Direktoral Surveillans & Karantina
                 </p>
               </div>
@@ -114,7 +114,7 @@ export default function HomePage() {
                 <a
                   key={item.label}
                   href={item.href}
-                  className={`inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg transition-all font-semibold text-[10px] sm:text-[11px] tracking-[0.05em] uppercase ${
+                  className={`inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg transition-all font-semibold text-[12px] sm:text-[13px] tracking-[0.05em] uppercase ${
                     item.isPrimary
                       ? 'bg-gradient-to-r from-[#0f8f96] to-[#16b7b2] text-white shadow-[0_4px_12px_rgba(15,143,150,0.3)] hover:shadow-[0_6px_16px_rgba(15,143,150,0.4)] hover:-translate-y-0.5 active:scale-95'
                       : 'text-[#3f5a5a] hover:text-[#0f8f96] hover:bg-[#f0fbfb] active:bg-[#e8f7f7]'
@@ -137,11 +137,11 @@ export default function HomePage() {
             style={{ backgroundImage: `url('${assets.headerBackground}')` }}
           />
 
-          <div className="relative max-w-7xl mx-auto flex min-h-[200px] sm:min-h-[240px] w-full flex-col items-start justify-center px-4 py-6 sm:px-5 sm:py-8 lg:px-6 lg:py-10">
-            <p className="text-[12px] sm:text-[13px] font-semibold tracking-[0.08em] uppercase text-[#0f8f96] mb-2 sm:mb-3">
+          <div className="relative max-w-[1440px] mx-auto flex min-h-[200px] sm:min-h-[240px] w-full flex-col items-start justify-center px-4 py-6 sm:px-5 sm:py-8 lg:px-6 lg:py-10">
+            <p className="text-[14px] sm:text-[15px] font-semibold tracking-[0.08em] uppercase text-[#0f8f96] mb-2 sm:mb-3">
               Statistik Resmi Kementerian Kesehatan
             </p>
-            <h1 className="text-[28px] sm:text-[40px] lg:text-[48px] font-bold leading-tight sm:leading-snug text-[#1a3535] max-w-4xl">
+            <h1 className="text-[32px] sm:text-[44px] lg:text-[52px] font-bold leading-tight sm:leading-snug text-[#1a3535] max-w-4xl">
               <span className="block">Laporan Pengawasan Kasus</span>
               <span className="block">Influenza dan COVID-19</span>
               <span className="block">Tahun 2025</span>
@@ -152,7 +152,7 @@ export default function HomePage() {
 
       {/* ── Information Section ──────────────────────────────────────────────── */}
       <section className="w-full bg-[#fbffff] py-8 sm:py-10 lg:py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-5 lg:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center bg-white rounded-2xl overflow-hidden shadow-[0_4px_16px_rgba(15,143,150,0.08)]">
             {/* Illustration / Image Side */}
             <div className="hidden lg:flex items-center justify-center p-8">
@@ -170,25 +170,25 @@ export default function HomePage() {
             <div className="p-6 sm:p-8 lg:p-8">
               <div className="space-y-4 sm:space-y-5">
                 <div>
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1a3535] leading-tight mb-2">
+                  <h2 className="text-[26px] sm:text-[32px] lg:text-[38px] font-bold text-[#1a3535] leading-tight mb-2">
                     Informasi Influenza dan COVID-19
                   </h2>
                   <div className="h-1 w-16 bg-gradient-to-r from-[#0f8f96] to-[#16b7b2] rounded-full"></div>
                 </div>
 
-                <p className="text-[13px] sm:text-[14px] lg:text-[15px] leading-relaxed text-[#3f5a5a]">
+                <p className="text-[15px] sm:text-[16px] lg:text-[18px] leading-relaxed text-[#3f5a5a]">
                   Laporan Pengawasan Kasus Influenza dan COVID-19 Tahun 2025 didasarkan sebagai upaya sistematik dalam memantau epidemiologi, serta dampak kesehatan masyarakat dari kedua penyakit tersebut di Indonesia.
                 </p>
 
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                  <button className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#16b7b2] text-white font-semibold text-[12px] sm:text-[13px] tracking-[0.05em] uppercase transition-all shadow-[0_4px_12px_rgba(22,183,178,0.3)] hover:shadow-[0_6px_16px_rgba(22,183,178,0.4)] hover:-translate-y-0.5 active:scale-95">
+                  <button className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#16b7b2] text-white font-semibold text-[14px] sm:text-[15px] tracking-[0.05em] uppercase transition-all shadow-[0_4px_12px_rgba(22,183,178,0.3)] hover:shadow-[0_6px_16px_rgba(22,183,178,0.4)] hover:-translate-y-0.5 active:scale-95">
                     Metodologi
                   </button>
-                  <button className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#f59c3a] text-white font-semibold text-[12px] sm:text-[13px] tracking-[0.05em] uppercase transition-all shadow-[0_4px_12px_rgba(245,156,58,0.3)] hover:shadow-[0_6px_16px_rgba(245,156,58,0.4)] hover:-translate-y-0.5 active:scale-95">
+                  <button className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#f59c3a] text-white font-semibold text-[14px] sm:text-[15px] tracking-[0.05em] uppercase transition-all shadow-[0_4px_12px_rgba(245,156,58,0.3)] hover:shadow-[0_6px_16px_rgba(245,156,58,0.4)] hover:-translate-y-0.5 active:scale-95">
                     Meta Data
                   </button>
-                  <button className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#4d7ba8] text-white font-semibold text-[12px] sm:text-[13px] tracking-[0.05em] uppercase transition-all shadow-[0_4px_12px_rgba(77,123,168,0.3)] hover:shadow-[0_6px_16px_rgba(77,123,168,0.4)] hover:-translate-y-0.5 active:scale-95">
+                  <button className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#4d7ba8] text-white font-semibold text-[14px] sm:text-[15px] tracking-[0.05em] uppercase transition-all shadow-[0_4px_12px_rgba(77,123,168,0.3)] hover:shadow-[0_6px_16px_rgba(77,123,168,0.4)] hover:-translate-y-0.5 active:scale-95">
                     Interoperabilitas
                   </button>
                 </div>
@@ -200,13 +200,13 @@ export default function HomePage() {
 
       {/* ── Matrix Section ──────────────────────────────────────────────────── */}
       <section className="w-full bg-[#fbffff] py-8 sm:py-10 lg:py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-5 lg:px-6">
           {/* Header Section */}
           <div className="mb-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#1a3535] mb-2">
+            <h2 className="text-[26px] sm:text-[32px] font-bold text-[#1a3535] mb-2">
               MATRIKS PERKEMBANGAN LAPORAN INFLUENZA DAN COVID-19
             </h2>
-            <p className="text-[13px] sm:text-[14px] text-[#4a7a7a] leading-relaxed">
+            <p className="text-[15px] sm:text-[16px] text-[#4a7a7a] leading-relaxed">
               Matriks Perkembangan Laporan Influenza dan COVID-19 merupakan instrumen analisis yang menyajikan perkembangan data kasus secara terstruktur dan komparatif dari waktu ke waktu, baik mingguan maupun bulanan.
             </p>
           </div>
@@ -215,14 +215,14 @@ export default function HomePage() {
           <div className="mb-6 flex flex-col sm:flex-row items-center gap-3">
             {/* Filter Tahun */}
             <div className="flex items-center gap-2 flex-shrink-0">
-              <label className="text-[12px] font-semibold text-[#4a7a7a] whitespace-nowrap">Filter Tahun:</label>
+              <label className="text-[14px] font-semibold text-[#4a7a7a] whitespace-nowrap">Filter Tahun:</label>
               <select
                 value={filterTahun}
                 onChange={(e) => {
                   setFilterTahun(e.target.value)
                   setCurrentPage(1)
                 }}
-                className="px-3 py-2 text-[12px] border border-[#d0e8e7] rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-[#16b7b2] focus:border-transparent cursor-pointer"
+                className="px-3 py-2 text-[14px] border border-[#d0e8e7] rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-[#16b7b2] focus:border-transparent cursor-pointer"
               >
                 <option value="semua">Semua Tahun</option>
                 {uniqueYears.map(year => (
@@ -233,26 +233,26 @@ export default function HomePage() {
 
             {/* Show Entries */}
             <div className="flex items-center gap-2 flex-shrink-0">
-              <label className="text-[12px] font-semibold text-[#4a7a7a] whitespace-nowrap">Show:</label>
+              <label className="text-[14px] font-semibold text-[#4a7a7a] whitespace-nowrap">Show:</label>
               <select
                 value={itemsPerPage}
                 onChange={(e) => {
                   setItemsPerPage(Number(e.target.value))
                   setCurrentPage(1)
                 }}
-                className="px-3 py-2 text-[12px] border border-[#d0e8e7] rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-[#16b7b2] focus:border-transparent cursor-pointer"
+                className="px-3 py-2 text-[14px] border border-[#d0e8e7] rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-[#16b7b2] focus:border-transparent cursor-pointer"
               >
                 <option value={10}>10</option>
                 <option value={15}>15</option>
                 <option value={20}>20</option>
                 <option value={30}>30</option>
               </select>
-              <span className="text-[12px] text-[#4a7a7a] whitespace-nowrap">entries</span>
+              <span className="text-[14px] text-[#4a7a7a] whitespace-nowrap">entries</span>
             </div>
 
             {/* Search — flex-1 supaya mengisi sisa lebar */}
             <div className="flex items-center gap-2 flex-1 w-full sm:w-auto">
-              <label className="text-[12px] font-semibold text-[#4a7a7a] whitespace-nowrap">Search:</label>
+              <label className="text-[14px] font-semibold text-[#4a7a7a] whitespace-nowrap">Search:</label>
               <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-[#9dbfc0]" />
                 <input
@@ -263,7 +263,7 @@ export default function HomePage() {
                     setSearchGlobal(e.target.value)
                     setCurrentPage(1)
                   }}
-                  className="w-full pl-10 pr-3 py-2 text-[12px] border border-[#d0e8e7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#16b7b2] focus:border-transparent bg-white"
+                  className="w-full pl-10 pr-3 py-2 text-[14px] border border-[#d0e8e7] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#16b7b2] focus:border-transparent bg-white"
                 />
               </div>
             </div>
@@ -275,12 +275,12 @@ export default function HomePage() {
               <table className="w-full">
                 <thead>
                   <tr className="bg-[#16b7b2] text-white">
-                    <th className="px-4 sm:px-6 py-3 text-left text-[11px] font-bold uppercase tracking-[0.05em] w-12">NO</th>
-                    <th className="px-4 sm:px-6 py-3 text-left text-[11px] font-bold uppercase tracking-[0.05em]">JUDUL</th>
-                    <th className="px-4 sm:px-6 py-3 text-center text-[11px] font-bold uppercase tracking-[0.05em] w-20">MINGGU KE</th>
-                    <th className="px-4 sm:px-6 py-3 text-center text-[11px] font-bold uppercase tracking-[0.05em] w-16">TAHUN</th>
-                    <th className="px-4 sm:px-6 py-3 text-center text-[11px] font-bold uppercase tracking-[0.05em]">TANGGAL PUBLIKASI</th>
-                    <th className="px-4 sm:px-6 py-3 text-center text-[11px] font-bold uppercase tracking-[0.05em] w-24">DETAIL</th>
+                    <th className="px-4 sm:px-6 py-3 text-left text-[13px] font-bold uppercase tracking-[0.05em] w-12">NO</th>
+                    <th className="px-4 sm:px-6 py-3 text-left text-[13px] font-bold uppercase tracking-[0.05em]">JUDUL</th>
+                    <th className="px-4 sm:px-6 py-3 text-center text-[13px] font-bold uppercase tracking-[0.05em] w-20">MINGGU KE</th>
+                    <th className="px-4 sm:px-6 py-3 text-center text-[13px] font-bold uppercase tracking-[0.05em] w-16">TAHUN</th>
+                    <th className="px-4 sm:px-6 py-3 text-center text-[13px] font-bold uppercase tracking-[0.05em]">TANGGAL PUBLIKASI</th>
+                    <th className="px-4 sm:px-6 py-3 text-center text-[13px] font-bold uppercase tracking-[0.05em] w-24">DETAIL</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -292,25 +292,25 @@ export default function HomePage() {
                           index % 2 === 0 ? 'bg-white' : 'bg-[#f5fcfc]'
                         }`}
                       >
-                        <td className="px-4 sm:px-6 py-4 text-[13px] font-semibold text-[#3f5a5a]">
+                        <td className="px-4 sm:px-6 py-4 text-[15px] font-semibold text-[#3f5a5a]">
                           {(currentPage - 1) * itemsPerPage + index + 1}
                         </td>
-                        <td className="px-4 sm:px-6 py-4 text-[13px] text-[#3f5a5a]">
+                        <td className="px-4 sm:px-6 py-4 text-[15px] text-[#3f5a5a]">
                           {item.judul}
                         </td>
-                        <td className="px-4 sm:px-6 py-4 text-[13px] font-semibold text-[#3f5a5a] text-center">
+                        <td className="px-4 sm:px-6 py-4 text-[15px] font-semibold text-[#3f5a5a] text-center">
                           {item.minggu_ke}
                         </td>
-                        <td className="px-4 sm:px-6 py-4 text-[13px] font-semibold text-[#3f5a5a] text-center">
+                        <td className="px-4 sm:px-6 py-4 text-[15px] font-semibold text-[#3f5a5a] text-center">
                           {item.tahun}
                         </td>
-                        <td className="px-4 sm:px-6 py-4 text-[13px] text-[#3f5a5a] text-center">
+                        <td className="px-4 sm:px-6 py-4 text-[15px] text-[#3f5a5a] text-center">
                           {formatDate(item.tanggal_publikasi)}
                         </td>
                         <td className="px-4 sm:px-6 py-4 text-center">
                           <Link
                             href={`/laporan/${item.minggu_ke}`}
-                            className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#16b7b2] text-white font-bold text-[11px] uppercase tracking-[0.05em] transition-all shadow-[0_2px_8px_rgba(22,183,178,0.3)] hover:shadow-[0_4px_12px_rgba(22,183,178,0.4)] hover:-translate-y-0.5 active:scale-95"
+                            className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#16b7b2] text-white font-bold text-[13px] uppercase tracking-[0.05em] transition-all shadow-[0_2px_8px_rgba(22,183,178,0.3)] hover:shadow-[0_4px_12px_rgba(22,183,178,0.4)] hover:-translate-y-0.5 active:scale-95"
                           >
                             Lihat
                           </Link>
@@ -319,7 +319,7 @@ export default function HomePage() {
                     ))
                   ) : (
                     <tr>
-                      <td colSpan={6} className="px-6 py-8 text-center text-[13px] text-[#9dbfc0]">
+                      <td colSpan={6} className="px-6 py-8 text-center text-[15px] text-[#9dbfc0]">
                         Tidak ada data yang sesuai dengan pencarian Anda
                       </td>
                     </tr>
@@ -330,7 +330,7 @@ export default function HomePage() {
 
             {/* Footer with Pagination */}
             <div className="px-4 sm:px-6 py-4 bg-white border-t border-[#e0e0e0] flex flex-col sm:flex-row items-center justify-between gap-4">
-              <p className="text-[12px] text-[#4a7a7a]">
+              <p className="text-[14px] text-[#4a7a7a]">
                 Menampilkan {filteredData.length > 0 ? (currentPage - 1) * itemsPerPage + 1 : 0} hingga{' '}
                 {Math.min(currentPage * itemsPerPage, filteredData.length)} dari {filteredData.length} data
               </p>
@@ -340,7 +340,7 @@ export default function HomePage() {
                 <button
                   onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
                   disabled={currentPage === 1}
-                  className="px-3 py-2 text-[12px] font-semibold text-[#4a7a7a] border border-[#d0e8e7] rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:enabled:border-[#16b7b2] hover:enabled:text-[#16b7b2] hover:enabled:bg-[#f0fbfb]"
+                  className="px-3 py-2 text-[14px] font-semibold text-[#4a7a7a] border border-[#d0e8e7] rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:enabled:border-[#16b7b2] hover:enabled:text-[#16b7b2] hover:enabled:bg-[#f0fbfb]"
                 >
                   Sebelumnya
                 </button>
@@ -350,7 +350,7 @@ export default function HomePage() {
                     <button
                       key={page}
                       onClick={() => setCurrentPage(page)}
-                      className={`h-8 w-8 rounded-lg font-semibold text-[12px] transition-all ${
+                      className={`h-8 w-8 rounded-lg font-semibold text-[14px] transition-all ${
                         page === currentPage
                           ? 'bg-[#16b7b2] text-white shadow-[0_2px_8px_rgba(22,183,178,0.3)]'
                           : 'text-[#4a7a7a] border border-[#d0e8e7] hover:border-[#16b7b2] hover:text-[#16b7b2] hover:bg-[#f0fbfb]'
@@ -364,7 +364,7 @@ export default function HomePage() {
                 <button
                   onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
                   disabled={currentPage === totalPages}
-                  className="px-3 py-2 text-[12px] font-semibold text-[#4a7a7a] border border-[#d0e8e7] rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:enabled:border-[#16b7b2] hover:enabled:text-[#16b7b2] hover:enabled:bg-[#f0fbfb]"
+                  className="px-3 py-2 text-[14px] font-semibold text-[#4a7a7a] border border-[#d0e8e7] rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed hover:enabled:border-[#16b7b2] hover:enabled:text-[#16b7b2] hover:enabled:bg-[#f0fbfb]"
                 >
                   Selanjutnya
                 </button>
@@ -377,11 +377,11 @@ export default function HomePage() {
       {/* ── Footer ──────────────────────────────────────────────────────────── */}
       <footer className="w-full bg-white border-t border-[#cfeeed] py-6 sm:py-8">
         <div className="px-4 sm:px-5 lg:px-6">
-          <div className="max-w-6xl mx-auto text-center space-y-2">
-            <p className="text-[11px] sm:text-[12px] text-[#0f8f96] font-semibold">
+          <div className="max-w-[1440px] mx-auto text-center space-y-2">
+            <p className="text-[13px] sm:text-[14px] text-[#0f8f96] font-semibold">
               Copyright © 2025 Direktoral Surveillans dan Karantina Kesehatan
             </p>
-            <p className="text-[11px] sm:text-[12px] text-[#4a7a7a]">
+            <p className="text-[13px] sm:text-[14px] text-[#4a7a7a]">
               Metodologi dan Sumber Data: Data berasal dari SKDR, NAR TC-19, Satu Sehat, Dashboard Vaksinasi COVID-19, dan Dashboard Surveilans ILI-SARI.
             </p>
           </div>
